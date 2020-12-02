@@ -4,9 +4,24 @@
 <head>
   <meta charset="utf-8">
   <title>Two 16 bit integers into 1 32 bit float</title>
+  <style>
+    h1 {text-align: center}
+    div {text-align: center}
+  </style>
 </head>
 
 <body>
+  <br>
+  <h1>Convert 2 16 bit integers into a 32 bit float: </h1>
+  <div>
+      <label for="num1">First 16 bit integer</label>
+      <input type="text" id="num1" name="num1"><br><br>
+      <label for="num2">Second 16 bit integer</label>
+      <input type="text" id="num2" name="num2"><br><br>
+      <button type="button" onclick="calculation()">Submit</button>
+  </div>
+  <br>
+  <div id="value"></div>
   <script src="mb_script.js"></script>
 </body>
 </html>
