@@ -10,11 +10,13 @@ function calculation() {
 
     //inserting num1 to the 0th postion (1st byte) of arrayBuffer
     view.setInt16(0, num1, false);
+    
     //inserting num2 to the 2nd position (3rd byte) of arrayBuffer
     view.setInt16(2, num2, false);
 
     //converting 4 byte arrayBuffer into a float and saving to variable val
     var val = view.getFloat32(0, false);
+
     //output to HTML
     document.getElementById("value").innerHTML = val;
 
